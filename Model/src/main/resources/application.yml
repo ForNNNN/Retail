@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: model
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/retail?useUnicode=true
+    username: root
+    password: 113089Mysqlpw@
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect #dialect
+        show_sql: true
+        format_sql: true
+        hbm2ddl:
+          auto: create
+        current_session_context_class: thread
+
+server:
+  port: 8000

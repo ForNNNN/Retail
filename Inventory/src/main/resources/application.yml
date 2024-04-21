@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: inventory
+#  kafka:
+#    consumer:
+#      group-id:
+#        rewards: rewards
+#    bootstrap-servers: localhost:9092
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/retail?useUnicode=true
+    username: root
+    password: 113089Mysqlpw@
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect #dialect
+        show_sql: true
+        format_sql: true
+        hbm2ddl:
+          auto: update
+        current_session_context_class: thread
+
+server:
+  port: 9002

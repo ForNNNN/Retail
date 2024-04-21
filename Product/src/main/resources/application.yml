@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: product
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/retail?useUnicode=true
+    username: root
+    password: 113089Mysqlpw@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect #dialect
+        show_sql: true
+        format_sql: true
+        hbm2ddl:
+          auto: update
+        current_session_context_class: thread
+server:
+  port: 9000

@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: rewards
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/retail
+    username: root
+    password: 113089Mysqlpw@
+  jpa:
+    show-sql: true
+
+server:
+  port: 9003
