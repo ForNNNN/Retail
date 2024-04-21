@@ -1,4 +1,4 @@
-package com.project.retail.rewards.entity;
+package com.project.retail.model.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
